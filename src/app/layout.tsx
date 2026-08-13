@@ -6,14 +6,10 @@ export const metadata: Metadata = {
   description: "Solusi Aplikasi Premium Terpercaya.",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{ children: React.ReactNode }>) {
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="id" suppressHydrationWarning>
-      <body className="antialiased min-h-screen">
-        {children}
-      </body>
+      <body className="antialiased min-h-screen">{children}</body>
     </html>
   );
 }
