@@ -1,7 +1,7 @@
 import type { Config } from 'tailwindcss'
 
 const config: Config = {
-  darkMode: 'class', // Wajib untuk toggle dark mode
+  darkMode: 'class',
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -17,14 +17,8 @@ const config: Config = {
         darkBg: '#0F172A',
         darkSurface: '#1E293B',
       },
-      borderRadius: {
-        ios: '24px',
-        card: '20px',
-      },
-      boxShadow: {
-        'soft': '0 10px 40px -10px rgba(0,0,0,0.08)',
-        'glow': '0 0 20px rgba(220, 38, 38, 0.3)',
-      }
+      borderRadius: { ios: '24px', card: '20px' },
+      boxShadow: { soft: '0 10px 40px -10px rgba(0,0,0,0.08)' }
     },
   },
   plugins: [],
