@@ -2,18 +2,16 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "NoaMart by Gandi | Premium Digital Store",
-  description: "Solusi Aplikasi Premium Dengan Desain iOS Modern.",
+  title: "NoaMart | Premium Digital Store",
+  description: "Solusi Aplikasi Premium Terpercaya.",
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="id">
-      <body className="antialiased bg-background text-gray-900 font-sans selection:bg-primary/20">
+    <html lang="id" suppressHydrationWarning>
+      <body className="antialiased min-h-screen">
         {children}
       </body>
     </html>
