@@ -3,19 +3,16 @@
 @tailwind utilities;
 
 body {
-  background-color: #FAFAFA;
+  @apply bg-background text-gray-900 transition-colors duration-300;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-/* Custom Scrollbar for iOS feel */
-::-webkit-scrollbar {
-  width: 6px;
+.dark body {
+  @apply bg-darkBg text-gray-100;
 }
-::-webkit-scrollbar-track {
-  background: transparent;
-}
-::-webkit-scrollbar-thumb {
-  background: #d1d5db;
-  border-radius: 10px;
-}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; }
+.dark ::-webkit-scrollbar-thumb { background: #334155; }
