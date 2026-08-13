@@ -2,16 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  @apply bg-background text-gray-900 transition-colors duration-300;
-  -webkit-font-smoothing: antialiased;
-}
-
-.dark body {
-  @apply bg-darkBg text-gray-100;
-}
-
-/* Custom Scrollbar */
+body { @apply bg-background text-gray-900 transition-colors duration-300; -webkit-font-smoothing: antialiased; }
+.dark body { @apply bg-darkBg text-gray-100; }
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: transparent; }
 ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; }
