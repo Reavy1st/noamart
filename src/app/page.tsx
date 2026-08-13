@@ -10,7 +10,7 @@ const products = [
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#FAFAFA] text-gray-900 pb-20 font-sans">
+    <main className="min-h-screen pb-20">
       {/* Header */}
       <header className="sticky top-0 z-50 backdrop-blur-xl bg-white/70 border-b border-gray-100 px-6 py-4 flex justify-between items-center">
         <div className="flex items-center gap-3">
@@ -73,7 +73,7 @@ export default function Home() {
           {products.map((p) => (
             <div key={p.id} className="bg-white p-4 rounded-[24px] shadow-sm border border-gray-100 hover:shadow-md hover:border-purple-100 transition-all group cursor-pointer">
               <div className="aspect-square bg-gray-50 rounded-[20px] mb-4 overflow-hidden relative flex items-center justify-center text-5xl group-hover:scale-105 transition-transform duration-300">
-                
+                📱
                 {p.sold > 50 && <span className="absolute top-3 right-3 bg-red-500 text-white text-[10px] font-black px-2 py-1 rounded-full shadow-sm">HOT</span>}
               </div>
               <h3 className="font-bold text-gray-900 truncate text-sm">{p.name}</h3>
