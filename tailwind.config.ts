@@ -1,6 +1,7 @@
 import type { Config } from 'tailwindcss'
 
 const config: Config = {
+  darkMode: 'class', // Wajib untuk toggle dark mode
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -9,29 +10,21 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: '#8B5CF6',
-        secondary: '#A78BFA',
-        background: '#FAFAFA',
+        primary: '#DC2626', // Merah Jawir Style
+        secondary: '#EF4444',
+        background: '#F8FAFC',
         surface: '#FFFFFF',
+        darkBg: '#0F172A',
+        darkSurface: '#1E293B',
       },
       borderRadius: {
         ios: '24px',
         card: '20px',
       },
-      animation: {
-        'fade-in': 'fadeIn 0.5s ease-out forwards',
-        'slide-up': 'slideUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards',
-      },
-      keyframes: {
-        fadeIn: {
-          '0%': { opacity: '0' },
-          '100%': { opacity: '1' },
-        },
-        slideUp: {
-          '0%': { transform: 'translateY(20px)', opacity: '0' },
-          '100%': { transform: 'translateY(0)', opacity: '1' },
-        },
-      },
+      boxShadow: {
+        'soft': '0 10px 40px -10px rgba(0,0,0,0.08)',
+        'glow': '0 0 20px rgba(220, 38, 38, 0.3)',
+      }
     },
   },
   plugins: [],
