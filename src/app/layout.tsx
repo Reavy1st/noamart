@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "NoaMart by Gandi | Digital Store Terpercaya",
-  description: "Solusi Aplikasi Premium Untuk Gaya Hidup Digital. Murah, Bergaransi, dan Berkualitas tinggi.",
+  title: "NoaMart by Gandi | Premium Digital Store",
+  description: "Solusi Aplikasi Premium Dengan Desain iOS Modern.",
 };
 
 export default function RootLayout({
@@ -13,7 +13,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="id">
-      <body className="antialiased bg-[#FAFAFA] text-gray-900 font-sans">
+      <body className="antialiased bg-background text-gray-900 font-sans selection:bg-primary/20">
         {children}
       </body>
     </html>
